@@ -35,3 +35,7 @@ variable "tags" {
     created_by = "terraform"
  }
 }
+
+variable "security_groups" {
+  type = "list"
+}

@@ -19,4 +19,5 @@ module "instance" {
   instance_type = "t2.micro"
   vpc_id  = "${module.vpc.vpc_id}"
   subnet_id = "${module.vpc.subnet_cidr1}"
+  security_groups = ["${aws_security_groups.web-sg.name}"]
 }
